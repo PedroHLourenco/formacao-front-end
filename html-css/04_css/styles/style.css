@@ -1,0 +1,524 @@
+body {
+  padding-bottom: 500px;
+}
+
+h3 {
+  color: green;
+}
+
+/* p {
+  color: blueviolet;
+} */
+
+/* aula 43 - comentários */
+/* Comentário em CSS */
+/* outro comentário */
+/* mais um comentário */
+
+/* aula 45 - classes */
+.paragraph {
+  background-color: black;
+  color: aqua;
+  padding: 5px;
+}
+
+/* aula 46 - ids */
+#exclusive-title {
+  background-color: purple;
+  color: gold;
+  padding: 10px;
+  font-size: 40px;
+}
+
+/* aula 47 - ordem dos seletores */
+h2 {
+  border-bottom: 2px solid red;
+}
+
+.titulo {
+  border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+  border-bottom: 4px solid green;
+}
+
+/* aula 49 - nome das cores */
+.color-name {
+  color: crimson;
+}
+
+/* aula 50 - cores hexadecimais */
+.hex {
+  color: #55a398;
+}
+
+.hex-2 {
+  color: #67eaf6;
+}
+
+/* aula 51 - aprofundamento em hex */
+.simple-hex {
+  color: #333;
+}
+
+.simple-hex-2 {
+  color: #a5f;
+}
+
+/* aula 52 - cores com rgb */
+.rgb {
+  color: rgb(255, 0, 0);
+}
+
+.mixed-rgb {
+  color: rgb(250, 175, 120);
+}
+
+/* aula 53 - cores com rgba */
+.rgba {
+  color: rgba(200, 49, 112, 0.558);
+}
+
+/* aula 54 - cores com hsl */
+.hsl {
+  color: hsl(107, 15%, 50%);
+}
+
+.hsl-2 {
+  color: hsl(215, 67%, 54%);
+}
+
+/* aula 55 - background-color */
+.bg {
+  background-color: black;
+  color: gold;
+}
+
+.bg-2 {
+  background-color: rgb(148, 200, 46);
+  color: #9f623a;
+}
+
+/* aula 56 - opacidade no bg */
+.bg-opacity {
+  background-color: green;
+  opacity: 0.2;
+}
+
+.bg-opacity-2 {
+  background-color: #999;
+  color: #000;
+  opacity: 0.8;
+}
+
+/* aula 57 - rgba com opacidade */
+.rgba-opacity {
+  background-color: rgba(90, 120, 20, 0.996);
+  color: #000;
+}
+
+/* aula 58 - bg image */
+.bg-image {
+  background-image: url("../imgs/nature.jpg");
+  padding: 10px;
+  color: #fff;
+}
+
+/* aula 59 - centralizar img de bg */
+.not-centered-bg,
+.centered-bg {
+  height: 400px;
+  width: 400px;
+  background-image: url("../imgs/bridge.jpg");
+}
+
+.centered-bg {
+  background-position: center;
+  background-size: cover;
+}
+
+/* aula 61 - largura e altura */
+.height-width {
+  height: 200px;
+  width: 100px;
+  background-color: red;
+}
+
+.height-width-2 {
+  height: 300px;
+  background-color: black;
+}
+
+/* aula 62 - padding */
+.without-padding,
+.padding {
+  background-color: #111;
+  color: #fff;
+}
+
+.padding {
+  background-color: #333;
+  padding: 20px;
+}
+
+/* aula 63 - padding individual */
+.padding-individual {
+  background-color: #333;
+  color: #fff;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+}
+
+/* aula 64 - shorthand padding */
+.shorthand-padding {
+  background-color: #444;
+  padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding-2 {
+  background-color: #555;
+  padding: 10px 20px;
+}
+
+/* aula 65 - padding e width */
+.without-border-box {
+  background-color: #444;
+  color: #fff;
+  width: 400px;
+  padding: 50px;
+}
+
+.border-box {
+  background-color: #666;
+  color: #fff;
+  width: 400px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* aula 66 - bordas */
+.border {
+  border: 5px solid red;
+  padding: 10px;
+}
+
+.border-2 {
+  border: 2px dotted blue;
+  padding: 15px;
+}
+
+/* aula 67 - bordas individuais */
+.border-left {
+  border-left: 10px solid red;
+  background-color: #222;
+  padding: 25px;
+}
+
+.border-bottom {
+  border-bottom: 10px double #399;
+  background-color: #222;
+  padding: 20px;
+}
+
+.border-right {
+  border-right: 5px dashed rgb(21, 255, 0);
+  background-color: #222;
+  padding: 25px;
+}
+
+.border-top {
+  border-top: 5px dotted hsla(282, 100%, 50%, 0.451);
+  background-color: #222;
+  padding: 25px;
+}
+
+/* 68 - border radius */
+.rounded-p {
+  border: 4px solid blue;
+  background-color: #000;
+  color: blue;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.rounded-p-2 {
+  background-color: #000;
+  color: blue;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+/* 69 - margin */
+.margin {
+  margin: 10px;
+  background-color: #222;
+  color: white;
+}
+
+.margin-top {
+  margin-top: 50px;
+  background-color: #555;
+  padding: 10px;
+}
+
+.margin-shorthand {
+  background-color: #777;
+  margin: 5px 10px 15px 20px;
+}
+
+/* 70 - box model */
+.box-model {
+  margin: 20px;
+  padding: 15px 25px;
+  border: 3px solid #674;
+  border-radius: 7px;
+  width: 200px;
+  height: 300px;
+}
+
+/* Tarefa 3 - Desafio 2 CSS */
+#desafio {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  border: 2px solid green;
+  margin: 10px;
+  background-color: #999;
+  outline: 2px solid blue;
+}
+
+.texto-desafio {
+  background-color: #55a398;
+  border: none;
+}
+
+/* aula 71 - text alignment */
+.text-aligned {
+  text-align: right;
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+  border: 1px solid blue;
+}
+
+/* aula 72 - text decoration */
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.sem-underline {
+  text-decoration: none;
+  color: red;
+}
+
+/* aula 73 - text transform */
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+/* aula 74 - letter spacing */
+.spacing {
+  letter-spacing: 5px;
+}
+
+/* aula 75 - fontes */
+.serif {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.sans-serif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.fantasy {
+  font-family: fantasy;
+}
+
+/* aula 76 - font style */
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+/* aula 77 - font weight */
+.thin,
+.bold,
+.bolder {
+  font-family: Helvetica;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+/* aula 78 - font size */
+.small {
+  font-size: 6px;
+}
+
+.big {
+  font-size: 78px;
+}
+
+/* aula 79 - display */
+.inline-box {
+  width: 50px;
+  height: 50px;
+  background-color: #8cbffa;
+  margin: 10px;
+  display: inline-block;
+}
+
+.block {
+  background-color: #333;
+  display: block;
+  margin: 10px;
+  color: #fff;
+}
+
+/* aula 80 - escondendo elementos */
+.hidden {
+  display: none;
+}
+
+/* aula 82 - position static */
+.static {
+  position: static;
+  background-color: #394;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+}
+
+/* aula 83 - position relative */
+.relative {
+  position: relative;
+  background-color: #224;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 40px;
+}
+
+/* aula 84 - position absolute */
+.absolute {
+  position: absolute;
+  background-color: #964;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  top: 2px;
+  right: 2px;
+}
+
+/* aula 85 - relative com absolute */
+.relative-container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  margin-top: 120px;
+  position: relative;
+}
+
+.absolute-1,
+.absolute-2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #000;
+}
+
+.absolute-1 {
+  top: 10px;
+  left: 10px;
+}
+
+.absolute-2 {
+  bottom: 10px;
+  right: 10px;
+}
+
+/* aula 86 - position fixed */
+.fixed {
+  width: 100px;
+  height: 100px;
+  background-color: #851;
+  border: 1px solid blue;
+  position: fixed;
+  top: 50px;
+  right: 100px;
+}
+
+/* aula 87 - position sticky */
+.sticky {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(235, 163, 69);
+  border: 1px solid rgb(7, 110, 23);
+  position: sticky;
+  top: 50px;
+  right: 100px;
+}
+
+/* aula 88 - z-index */
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+  width: 50px;
+  height: 50px;
+  background-color: #123;
+  position: absolute;
+}
+
+.absolute-3 {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.absolute-4 {
+  top: 10px;
+  left: 10px;
+  background-color: #246;
+  z-index: 2;
+}
+
+.absolute-5 {
+  top: 40px;
+  left: 40px;
+  background-color: #394;
+  z-index: 1;
+}
