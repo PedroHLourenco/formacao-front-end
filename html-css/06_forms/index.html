@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h2>Formulários em HTML</h2>
+    <!-- aula 99 - criando formulário -->
+    <!-- aula 100 - atributos da tag form -->
+    <form action="register.php" method="post">
+      <div>
+        <label>Nome: </label>
+        <input type="text" />
+      </div>
+
+      <!-- aula 101 - atributo name -->
+      <div>
+        <!-- aula 102 - atributo da label -->
+        <label for="age">Idade:</label>
+        <input type="text" name="age" />
+      </div>
+
+      <!-- aula 104 - select -->
+      <div>
+        <label for="job">Selecione sua profissão:</label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="devops">DevOps</option>
+        </select>
+      </div>
+
+      <!-- aula 105 - atributo selected -->
+      <div>
+        <label for="contract">Você leu os termos do contrato?</label>
+        <select name="contract">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+      </div>
+
+      <!-- aula 106 - múltiplas opções -->
+      <div>
+        <label for="items">Selecione os itens desejados</label>
+        <select name="items" multiple>
+          <option value="pera">Pera</option>
+          <option value="maca">Maçã</option>
+          <option value="milho">Milho</option>
+          <option value="tomate">Tomate</option>
+        </select>
+      </div>
+
+      <!-- aula 107 - textarea -->
+      <div>
+        <label for="comment">Deixe seu comentário sobre o post: </label>
+        <textarea name="comment"></textarea>
+      </div>
+
+      <!-- aula 108 - fieldset e legend -->
+      <div>
+        <fieldset>
+          <legend>Preencha suas informações:</legend>
+          <label for="firstname">Nome:</label>
+          <input type="text" name="firstname" />
+          <label for="lastname">Sobrenome:</label>
+          <input type="text" name="lastname" />
+        </fieldset>
+      </div>
+
+      <!-- aula 109 - datalist -->
+      <div>
+        <label for="flavor">Escolha o sabor:</label>
+        <input type="text" list="flavors" name="flavor" />
+
+        <datalist id="flavors">
+          <option value="Morango"></option>
+          <option value="Chocolate"></option>
+          <option value="Creme"></option>
+          <option value="Napolitano"></option>
+        </datalist>
+      </div>
+
+      <!-- aula 110 - senha -->
+      <div>
+        <label for="password">Digite sua senha:</label>
+        <input type="password" name="password" />
+      </div>
+
+      <!-- aula 112 - radio button -->
+      <div>
+        <label for="car_brand">Escolha a marca do seu carro:</label>
+        <div class="radio">
+          <input type="radio" value="bmw" name="car_brand" />
+          <label for="bmw">BMW</label>
+        </div>
+        <div class="radio">
+          <input type="radio" value="Ferrari" name="car_brand" />
+          <label for="bmw">Ferrari</label>
+        </div>
+        <div class="radio">
+          <input type="radio" value="Porsche" name="car_brand" />
+          <label for="bmw">Porsche</label>
+        </div>
+      </div>
+
+      <!-- aula 113 - checkbox -->
+      <div>
+        <label for="optionals">Opcionais do carro?</label>
+        <div class="checkbox">
+          <input type="checkbox" name="optionals[]" value="big_tires" />
+          <label for="big_tires">Pneus grandes</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="optionals[]" value="hybrid" />
+          <label for="hybrid">Híbrido</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="optionals[]" value="turbo_engine" />
+          <label for="turbo_engine">Motor turbo</label>
+        </div>
+      </div>
+
+      <!-- aula 114 - datas -->
+      <div>
+        <label for="birthdate">Data de nascimento:</label>
+        <input type="date" name="birthdate" />
+      </div>
+
+      <!-- aula 115 - arquivos -->
+      <div>
+        <label for="image">Insira uma imagem</label>
+        <input type="file" name="image" />
+      </div>
+
+      <!-- aula 116 - números -->
+      <div>
+        <label for="salary">Quanto você ganha?</label>
+        <input type="number" name="salary" />
+      </div>
+
+      <!-- aula 117 - e-mails -->
+      <div>
+        <label for="email">Digite seu email:</label>
+        <input type="email" name="email" id="" />
+      </div>
+
+      <!-- aula 118 - atributo value -->
+      <div>
+        <label for="value">Digite um valor:</label>
+        <input type="text" value="O meu valor é este" name="value" />
+      </div>
+
+      <!-- aula 119 - atributo disabled -->
+      <div>
+        <p>Tente mudar o valor:</p>
+        <input type="text" value="não precisa preencher" disabled />
+      </div>
+
+      <!-- aula 120 - atributo placeholder -->
+      <div>
+        <label for="current_job">Digite sua profissão:</label>
+        <input
+          type="text"
+          name="current_job"
+          placeholder="No que você está trabalhando atualmente?"
+        />
+      </div>
+
+      <!-- aula 121 - atributo required -->
+      <div>
+        <label for="birthyear">Ano nascimento</label>
+        <input
+          type="text"
+          name="birthyear"
+          placeholder="Digite o ano em que você nasceu"
+          required
+        />
+      </div>
+
+      <!-- aula 111 - resetar formulário -->
+      <input type="reset" value="Limpar" />
+
+      <!-- aula 103 - envio de formulários -->
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
