@@ -1,0 +1,195 @@
+body {
+  padding-bottom: 50px;
+}
+
+/* aula 155 - aplicando flexbox */
+.flex {
+  display: flex;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* aula 156 - layout em coluna */
+.flex-column {
+  display: flex;
+  background-color: #ccc;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* aula 157 - flex wrap */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 40px;
+  width: 33%;
+  border: 1px solid red;
+}
+
+/* aula 158 - posicionamento horizontal (justify content) */
+.center,
+.space-around,
+.end,
+.space-between {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.center .box,
+.space-around .box,
+.end .box,
+.space-between .box {
+  width: 50px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+/* aula 159 - posicionamento vertical (align items) */
+.align-center,
+.stretch,
+.flex-end {
+  display: flex;
+  margin-bottom: 20px;
+  height: 200px;
+  border: 1px solid blue;
+}
+
+.align-center .box,
+.stretch .box,
+.flex-end .box {
+  width: 50px;
+}
+
+.align-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.stretch .box {
+  height: auto;
+}
+
+/* aula 160 - gap */
+.gap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid green;
+  gap: 10px;
+}
+
+.gap .box {
+  width: 32%;
+}
+
+/* aula 161 - order */
+.order {
+  display: flex;
+}
+
+#one {
+  order: 1;
+}
+
+#two {
+  order: 2;
+}
+
+#three {
+  order: 3;
+}
+
+/* aula 162 - grow */
+.grow {
+  display: flex;
+}
+
+.grow .box {
+  flex: 1;
+}
+
+.grow .big {
+  flex: 2;
+}
+
+/* aula 163 - basis */
+.basis {
+  display: flex;
+}
+
+.basis .box {
+  flex-basis: 20px;
+}
+
+.basis .big {
+  flex-grow: 1;
+}
+
+/* aula 164 - shrink */
+.shrink {
+  display: flex;
+}
+
+.shrink .box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  width: auto;
+}
+
+.shrink .small {
+  flex-shrink: 2;
+}
+
+/* aula 165 - flex shorthand */
+.shorthand {
+  display: flex;
+}
+
+.shorthand .box {
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .different {
+    flex: 3 1 400px;
+}
+
+/* aula 166 - auto alinhamento */
+.auto-alignment {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid blueviolet;
+}
+
+
+.auto-alignment .different {
+    align-self: center;
+}
