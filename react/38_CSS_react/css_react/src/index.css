@@ -1,0 +1,21 @@
+/* aula 526 - css global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+body {
+  padding-bottom: 500px;
+}
+
+h1 {
+  color: red;
+}
+
+/* aula 530 - classes dinâmicas */
+.red-title {
+  font-size: 50px;
+  color: red;
+  background-color: #000;
+}
