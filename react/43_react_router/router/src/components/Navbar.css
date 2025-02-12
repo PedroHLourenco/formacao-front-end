@@ -1,0 +1,5 @@
+/* aula 589 - link ativo */
+.active {
+  background-color: red;
+  color: #000;
+}
