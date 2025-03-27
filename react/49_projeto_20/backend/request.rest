@@ -1,0 +1,15 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 2",
+    "description": "Alguma descrição",
+    "price": 1400,
+    "image": "https://images.pexels.com/photos/31308278/pexels-photo-31308278/free-photo-of-ruas-vibrantes-de-osaka-tsutenkaku-e-lanterna-de-baiacu.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/67e4d1775a7c66b7dc221c1a
